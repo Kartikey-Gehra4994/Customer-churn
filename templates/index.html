@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Churn Prediction</title>
+    <link rel="icon" href="{{ favicon_url }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="favicon_url" href="{{ url_for('static', filename='logo.ico') }}">
+</head>
+
+<body>
+
+    <h2>Customer Churn Prediction</h2>
+
+    <p>✨ Enter your feature values separated by comma ( , )</p>
+
+    <form action="/predict" method="post">
+
+        <textarea name="features" placeholder="Example: 0.1, -1.2, 0.5, ... , 120" id=""></textarea><br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    <div class="result">
+        {% if prediction_text %}
+        <span class="{{  'result-stay' if 'Stay' in prediction_text else 'result-churn'  }}">
+            {{ prediction_text }}
+        </span>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
