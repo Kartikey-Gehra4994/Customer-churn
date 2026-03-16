@@ -7,6 +7,20 @@ A Machine Learning web application that predicts whether a telecom customer is l
 Customer churn is a major problem for telecom companies.
 This project uses Machine Learning to analyze customer data and predict churn risk so companies can take action before losing customers.
 
+Ex Features
+
+```
+Stay : Male,0,No,Yes,62,Yes,No,DSL,Yes,Yes,No,No,No,No,One year,No,Bank transfer (automatic),56.15,3487.95
+```
+```
+Churn : Male,0,No,No,2,Yes,No,DSL,Yes,Yes,No,No,No,No,Month-to-month,Yes,Mailed check,53.85,108.15
+```
+
+## Live App
+```
+Checkout Link : https://customer-churn-wov4.onrender.com/
+```
+
 ## Features
 
 * Customer churn prediction using Machine Learning
